@@ -11,8 +11,14 @@
                 top: 150px;
             }
         </style>
+        <script>
+            function loadBigFoot()
+            {
+                document.getElementById("bigFoot").src = "http://andrewd.50webs.com/bigfoot/1IllustriousBigfoot/src/bigfoot.png"
+            }
+        </script>
     </head>
     <body onload="loadBigFoot()">
-        <img id="bigFoot" src="http://andrewd.50webs.com/bigfoot/1IllustriousBigfoot/src/bigfoot.png" onclick="alert('Woohoo, you win! You found Bigfoot!');">
+        <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');">
     </body>
 </html>
