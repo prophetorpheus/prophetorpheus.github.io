@@ -1,23 +1,26 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            body {
-                background-image: url("assets/forest.jpg");
-            }
-            img {
-                position: absolute;
-                left: 100px;
-                top: 150px;
-            }
-        </style>
-        <script>
-            function loadBigFoot() {
-                document.getElementById("bigFoot").src = "assets/bigfoot.png"
-            }
-        </script>
-    </head>
-    <body onload="loadBigFoot()">
-        <img id="bigFoot" onclick="alert('Woohoo, you win! You found Bigfoot!');">
-    </body>
+<head>
+    <link rel="stylesheet" href="style.css"
+  </head>
+  <body onload="loadBigFoot()">
+   
+
+    <script>
+    function moveBigFoot() {
+        alert('Woohoo, you win! You found Bigfoot!')
+        var picture = document.getElementById('bigFoot')
+
+        var x = Math.random()*300;
+        var y = Math.random()*300;
+        
+        picture.style.top = x + 'px';picture.style.left = y + 'px';
+        }
+
+        function loadBigFoot() {
+  document.getElementById('bigFoot').src = 'bigfoot.png'
+}
+ </script>
+   
+    <img id="bigFoot" onclick = "moveBigFoot()"; />
+    
+  </body>
 </html>
